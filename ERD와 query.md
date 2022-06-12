@@ -2,7 +2,7 @@
 
 ### ■ ERD
 ---------------------------------------
-<img src="./erd.png" alt="이체 내역 조회" size="width:90%"/>
+<img src="../img/erd.png" alt="이체 내역 조회" size="width:90%"/>
 
 ### ■ Query
 ```sql
