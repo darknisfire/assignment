@@ -1,12 +1,12 @@
 ## Document
 
-### ■ 이체 내역 조회 Transfer History - POST
+### ■ 이체 내역 조회 Transfer History Inquiry - POST
 --------------------------------------------
 카카오뱅크에서 개설된 계좌의 이체내역을 조회한다.
 
 |HTTP|
 |-|
-|POST ~/transferHistory|
+|POST ~/transferHistoryInquiry|
 
 #### ● 요청 헤더
 |key|value|
@@ -61,16 +61,15 @@ Content-type: application/json;charset=UTF-8
 
 
 &nbsp;
-### ■ 계좌목록 조회 Easy Transferable Accounts - POST
+### ■ 계좌목록 조회 Account List Inquiry - POST
 --------------------------------------------
 계좌 목록을 조회합니다.
 
 |HTTP|
 |-|
-|POST ~/getEasyTransferableAccountList|
+|POST ~/accountListInquiry|
 
 #### ● 요청 헤더
-
 |key|value|
 |-|-|
 |Authorization|Bearer ${Token}|
@@ -112,16 +111,15 @@ Content-type: application/json;charset=UTF-8
 ```
 
 &nbsp;
-### ■ 간편이체 송금 Easy Transfer Request - POST
+### ■ 간편이체 송금 Easy Transfer Wire - POST
 --------------------------------------------
 카카오톡 친구에게 송금합니다.
 
 |HTTP|
 |-|
-|POST ~/easyTransfer|
+|POST ~/easyTransferWire|
 
 #### ● 요청 헤더
-
 |key|value|
 |-|-|
 |Authorization|Bearer ${Token}|
