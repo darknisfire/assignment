@@ -11,7 +11,7 @@
 #### ● 요청 헤더
 |key|value|
 |-|-|
-|Bearer|Token|
+|Authorization|Bearer ${Token}|
 
 #### ● 요청 본문
 |Name|Required|Type|Description|
@@ -73,7 +73,7 @@ Content-type: application/json;charset=UTF-8
 
 |key|value|
 |-|-|
-|Bearer|Token|
+|Authorization|Bearer ${Token}|
 
 #### ● 요청 본문
 
@@ -121,7 +121,7 @@ Content-type: application/json;charset=UTF-8
 
 |key|value|
 |-|-|
-|Bearer|Token|
+|Authorization|Bearer ${Token}|
 
 #### ● 요청 본문
 |Name|Required|Type|Description|
