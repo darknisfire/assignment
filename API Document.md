@@ -155,6 +155,8 @@ Content-type: application/json;charset=UTF-8
 HTTP/1.1 200 OK
 Content-type: application/json;charset=UTF-8
 {
+    "fee": "0",
+    "balance": "10000",
     "tx_dt": "-----",
     "tx_seqno": "-----",
     "inbn_trsf_tx_kncd": "-----"
