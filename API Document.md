@@ -61,9 +61,9 @@ Content-type: application/json;charset=UTF-8
 
 
 &nbsp;
-### ■ 간편이체 계좌목록 조회 Easy Transferable Accounts - POST
+### ■ 계좌목록 조회 Easy Transferable Accounts - POST
 --------------------------------------------
-간편이체를 이용할 수 있는 계좌 목록을 조회합니다.
+계좌 목록을 조회합니다.
 
 |HTTP|
 |-|
@@ -76,6 +76,9 @@ Content-type: application/json;charset=UTF-8
 |Authorization|Bearer ${Token}|
 
 #### ● 요청 본문
+|Name|Required|Type|Description|
+|-|-|-|-|
+|accountType|false|string|가져올 계좌의 유형입니다.|
 
 #### ● 응답
 |Name|Type|Description|
@@ -126,9 +129,8 @@ Content-type: application/json;charset=UTF-8
 #### ● 요청 본문
 |Name|Required|Type|Description|
 |-|-|-|-|
-|receiverUUID      |true|string|카카오톡 친구목록에서 가져온 친구 uuid입니다.|
-|receiverNickName  |true|string|카카오톡 친구목록에서 가져온 친구 별명입니다.|
-|receiverName      |true|string|송금할 친구의 실명입니다.|
+|kakaotalkUuid     |true|string|송금할 친구의 카카오톡 프로필 uuid입니다.|
+|clientName        |true|string|송금할 친구의 실명입니다.|
 |withdrawAccountIdx|true|long|송금할 계좌의 index입니다.|
 |amount            |true|int|송금할 금액입니다.|
 |memo              |false|string|이체내역에 기록될 메모입니다.|
@@ -144,6 +146,8 @@ Content-type: application/json;charset=UTF-8
 *KakaotalkWithdrawal*
 |Name|Type|Description|
 |-|-|-|
+|fee                |int   |송금 수수료입니다.|
+|balance            |long  |송금 후 계좌 잔액입니다.|
 |tx_dt              |string|확인불가|
 |tx_seqno           |string|확인불가|
 |inbn_trsf_tx_kncd  |string|확인불가|

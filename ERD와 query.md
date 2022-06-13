@@ -5,6 +5,9 @@
 <img src="./img/erd.png" alt="이체 내역 조회" size="width:90%"/>
 
 ### ■ Query
+
+`mysql 8.0.29`버전으로 작성되었습니다.
+
 ```sql
 SELECT "", "이체 완료건수", "이체 오류건수", "처리 중 건수"
 
